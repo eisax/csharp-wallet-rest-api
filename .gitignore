@@ -35,13 +35,12 @@ bld/
 [Ll]ogs/
 
 ## Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 ## Visual Studio Mac
 .DS_Store
 .idea/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
