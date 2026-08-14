@@ -27,6 +27,18 @@ public class WalletController : ControllerBase
         return Ok(transaction);
     }
 
+    [HttpPost("{walletId}/withdrawal")]
+    public async Task<IActionResult> Withdrawal(Guid walletId,
+        WithdrawalRequest request)
+    {
+        var transaction =
+            await _walletService.WithdrawalAsync(
+                walletId,
+                request);
+
+        return Ok(transaction);
+    }
+
     [HttpPost]
     public async Task<IActionResult> CreateWallet(
     CreateUserRequest request)

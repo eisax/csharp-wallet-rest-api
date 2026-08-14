@@ -7,4 +7,6 @@ public interface IWalletService
 
     Task<WalletResponse> CreateWalletAsync(
         CreateUserRequest request);
+
+    Task<TransactionResponse> WithdrawalAsync(Guid userId, WithdrawalRequest request);
 }
